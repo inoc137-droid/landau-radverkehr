@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "7-59/10 * * * *"
   workflow_dispatch:
+    inputs:
+      test_mail:
+        description: "Send test mail"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -26,6 +31,7 @@ jobs:
 
       - name: Run monitor
         env:
+          SEND_TEST_MAIL: ${{ github.event.inputs.test_mail }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}

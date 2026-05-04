@@ -203,5 +203,14 @@ def main():
         print("Keine Änderung.")
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    if os.environ.get("SEND_TEST_MAIL") == "true":
+        send_email(
+            subject="Testmail: Landau Radverkehr Monitor",
+            body="Das ist eine Testmail. SMTP funktioniert."
+        )
+        print("Testmail versendet.")
+        return
+
+    old = load_old_state()
+    new = snapshot()
