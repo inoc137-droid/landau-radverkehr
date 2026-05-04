@@ -160,6 +160,7 @@ def send_email(subject: str, body: str) -> None:
     smtp_password = os.environ["SMTP_PASSWORD"]
     mail_from = os.environ["MAIL_FROM"]
     mail_to = os.environ["MAIL_TO"]
+    recipients = [x.strip() for x in mail_to.replace(";", ",").split(",") if x.strip()]
 
     msg = MIMEText(body, "plain", "utf-8")
     msg["Subject"] = subject
@@ -169,7 +170,7 @@ def send_email(subject: str, body: str) -> None:
     with smtplib.SMTP(smtp_host, smtp_port) as server:
         server.starttls()
         server.login(smtp_user, smtp_password)
-        server.send_message(msg)
+        server.send_message(msg, to_addrs=recipients)
 
 
 def main():
