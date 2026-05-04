@@ -1,0 +1,57 @@
+{
+  "radverkehr_page": {
+    "url": "https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+    "type": "html",
+    "status_code": 200,
+    "visible_text_hash": "24a2de1ed87fca6d43f47407b4b7cc575804f62728a52123361563803cd0bb5d",
+    "relevant_links_hash": "87575e5aa8d90db88397fe9e990706bedcbff84a2caaeec0b378c670c545414a",
+    "visible_text_excerpt": "Klimaschutzportal Stadt Landau in der Pfalz: Förderprogramm Radverkehr Bildanzeige × Schließen Homepage Stadt Energie- und Klimaschutzagentur RLP Klimaschutzportal Stadt Landau in der Pfalz Klimaschutz. Vernetzt. Deine Region. Startseite Projekte Laufende Projekte Abgeschlossene Projekte Veranstaltungsarchiv Förderung Allgemeine Informationen Förderprogramm Photovoltaik-Balkonanlagen Förderprogramm Radverkehr Förderprogramm Elektroroller & S-Pedelecs Förderprogramm Wallboxen & Ladesäulen Förderprogramm Wärmeschutz und Heizungstausch Pressemitteilungen Mitmachen Landauer Kinderklimakonferenz Landauer Klimarat Klimaschatz - Landaus Klimahelden Bürgersolarberatung Nachhaltigkeitsguide Landau der RPTU Wärme Kommunale Wärmeplanung Fernwärmeausbau Landau Wärmetipps für Zuhause Handwerksdatenbank Strom Bürgersolarberatung Stromtipps für Zuhause Mobilität Klimafreundlich unterwegs in Landau Stadtradeln Bici-Bus Klimaanpassung Klimaanpassung in Landau Klimaanpassungskonzept Versiegelungskataste",
+    "relevant_links": [
+      "Download -> https://landau.klimaschutzportal.rlp.de/fileadmin/redaktion/kipki/f%C3%B6rderrichtlinie_radverkehr.pdf",
+      "Emissionen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Ernährung -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Förderprogramm Elektroroller & S-Pedelecs -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/elektroroller-s-pedelecs",
+      "Förderprogramm Photovoltaik-Balkonanlagen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/balkon-pv-anlagen",
+      "Förderprogramm Radverkehr -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Förderprogramm Wallboxen & Ladesäulen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/wallboxen-ladesaeulen",
+      "Förderprogramm Wärmeschutz und Heizungstausch -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/foerderprogramm-daemmung-und-heizungstausch",
+      "Förderung -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Klimaanpassung -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Mitmachen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Mobilität -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Projekte -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Strom -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Wärme -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "kipki@landau.de -> mailto:kipki@landau.de"
+    ]
+  },
+  "sitemap": {
+    "url": "https://landau.klimaschutzportal.rlp.de/informationen/sitemap",
+    "type": "html",
+    "status_code": 200,
+    "visible_text_hash": "46347dbafbafc0139e654c579d8bf3a4ad652c6905c06dea12363647169acc9b",
+    "relevant_links_hash": "f8e0956e7200185ee3c6681ac7d7cf57a756adda7264991718f5d8e6aa764c70",
+    "visible_text_excerpt": "Klimaschutzportal Stadt Landau in der Pfalz: Sitemap Bildanzeige × Schließen Homepage Stadt Energie- und Klimaschutzagentur RLP Klimaschutzportal Stadt Landau in der Pfalz Klimaschutz. Vernetzt. Deine Region. Startseite Projekte Laufende Projekte Abgeschlossene Projekte Veranstaltungsarchiv Förderung Allgemeine Informationen Förderprogramm Photovoltaik-Balkonanlagen Förderprogramm Radverkehr Förderprogramm Elektroroller & S-Pedelecs Förderprogramm Wallboxen & Ladesäulen Förderprogramm Wärmeschutz und Heizungstausch Pressemitteilungen Mitmachen Landauer Kinderklimakonferenz Landauer Klimarat Klimaschatz - Landaus Klimahelden Bürgersolarberatung Nachhaltigkeitsguide Landau der RPTU Wärme Kommunale Wärmeplanung Fernwärmeausbau Landau Wärmetipps für Zuhause Handwerksdatenbank Strom Bürgersolarberatung Stromtipps für Zuhause Mobilität Klimafreundlich unterwegs in Landau Stadtradeln Bici-Bus Klimaanpassung Klimaanpassung in Landau Klimaanpassungskonzept Versiegelungskataster Hitzeaktionstag ",
+    "relevant_links": [
+      "Förderprogramm Elektroroller & S-Pedelecs -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/elektroroller-s-pedelecs",
+      "Förderprogramm Photovoltaik-Balkonanlagen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/balkon-pv-anlagen",
+      "Förderprogramm Radverkehr -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/radverkehr",
+      "Förderprogramm Wallboxen & Ladesäulen -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/wallboxen-ladesaeulen",
+      "Förderprogramm Wärmeschutz und Heizungstausch -> https://landau.klimaschutzportal.rlp.de/portal/foerderung/foerderprogramm-daemmung-und-heizungstausch"
+    ]
+  },
+  "known_form_pdf": {
+    "url": "https://landau.klimaschutzportal.rlp.de/fileadmin/redaktion/kipki/antragsformular_f%C3%B6rderprogramme_ab_202511.pdf",
+    "type": "application/pdf",
+    "status_code": 200,
+    "content_hash": "8fb10087fefdf460bb3d84c29f2400c7850b1bdb26cc7c7f732e9fcdd8a6b3a2",
+    "content_length": 143534
+  },
+  "known_guideline_pdf": {
+    "url": "https://landau.klimaschutzportal.rlp.de/fileadmin/redaktion/kipki/f%C3%B6rderrichtlinie_radverkehr.pdf",
+    "type": "application/pdf",
+    "status_code": 200,
+    "content_hash": "1c7635d31272e6af7d40a9be449f544268cb5043ad145f8ed80983fe54d1c731",
+    "content_length": 924225
+  }
+}
