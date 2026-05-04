@@ -171,38 +171,6 @@ def send_email(subject: str, body: str) -> None:
         server.login(smtp_user, smtp_password)
         server.send_message(msg)
 
-
-def main():
-    old = load_old_state()
-    new = snapshot()
-    changes = diff_states(old, new)
-
-    save_state(new)
-
-    # Beim ersten Lauf keine Alarm-Mail senden, nur Baseline speichern.
-    if old is None:
-        print("Baseline erzeugt.")
-        return
-
-    if changes:
-        body = "Änderung erkannt:\n\n" + "\n\n---\n\n".join(changes)
-
-        body += "\n\n\nAktuell relevante Links:\n"
-        for key, item in new.items():
-            if item.get("relevant_links"):
-                body += f"\n[{key}]\n"
-                body += "\n".join(item["relevant_links"])
-                body += "\n"
-
-        send_email(
-            subject="Änderung auf Klimaschutzportal Radverkehr erkannt",
-            body=body,
-        )
-        print("Änderung erkannt, Mail versendet.")
-    else:
-        print("Keine Änderung.")
-
-
 def main():
     if os.environ.get("SEND_TEST_MAIL") == "true":
         send_email(
