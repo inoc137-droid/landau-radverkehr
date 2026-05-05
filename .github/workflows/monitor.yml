@@ -48,4 +48,4 @@ jobs:
           git config user.email "github-actions@github.com"
           git add state.json
           git diff --cached --quiet || git commit -m "Update website monitor state"
-          git push
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git 
