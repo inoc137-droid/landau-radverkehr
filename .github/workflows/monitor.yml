@@ -2,7 +2,9 @@ name: Monitor Landau Radverkehr
 
 on:
   schedule:
-    - cron: "11,31,51 * * * *"
+  - cron: "11 * * * *"
+  - cron: "31 * * * *"
+  - cron: "51 * * * *"
   workflow_dispatch:
     inputs:
       test_mail:
