@@ -42,14 +42,22 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def fetch(url: str) -> requests.Response:
+def fetch(url: str) -> requests.Response | None:
+    """Fetch URL with error handling. Returns None on errors instead of raising."""
     headers = {
         "User-Agent": "Mozilla/5.0 compatible website-change-monitor/1.0",
         "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
     }
-    r = requests.get(url, headers=headers, timeout=30)
-    r.raise_for_status()
-    return r
+    try:
+        r = requests.get(url, headers=headers, timeout=30)
+        r.raise_for_status()
+        return r
+    except requests.exceptions.HTTPError as e:
+        print(f"HTTP Error fetching {url}: {e.response.status_code}")
+        return None
+    except requests.exceptions.RequestException as e:
+        print(f"Request error fetching {url}: {e}")
+        return None
 
 
 def normalize_html(url: str, html: str) -> dict:
@@ -87,6 +95,16 @@ def snapshot() -> dict:
 
     for name, url in TARGETS.items():
         r = fetch(url)
+        if r is None:
+            # Record fetch failure as error state
+            result[name] = {
+                "url": url,
+                "type": "error",
+                "status_code": None,
+                "error": "Failed to fetch"
+            }
+            continue
+
         content_type = r.headers.get("content-type", "")
 
         if "text/html" in content_type:
